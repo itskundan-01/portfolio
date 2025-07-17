@@ -38,25 +38,30 @@ document.querySelectorAll('.project-link').forEach(link => {
         e.stopPropagation(); // Prevent triggering the parent card's click event
         const href = link.getAttribute('href');
         if (href && !href.startsWith('#')) {
-            e.preventDefault();
-            window.open(`https://${href}`, '_blank');
+            // Only prevent default and modify URL if it doesn't already start with http/https
+            if (!href.startsWith('http://') && !href.startsWith('https://')) {
+                e.preventDefault();
+                window.open(`https://${href}`, '_blank');
+            }
+            // If it already has http/https, let it open normally
         }
     });
 });
 
-// Simple Form Validation (Replacing EmailJS)
+// Simple Form Validation and Formspree Integration
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('form-status');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        // Basic validation only
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault(); // Prevent default form submission
+        
+        // Basic validation
         const formInputs = contactForm.querySelectorAll('input, textarea');
         let isValid = true;
         
         formInputs.forEach(input => {
             if (!input.value.trim()) {
-                e.preventDefault();
                 isValid = false;
                 input.classList.add('error');
             } else {
@@ -64,26 +69,98 @@ if (contactForm) {
             }
         });
         
-        if (isValid) {
-            // The form will submit naturally to Formspree
-            // We just show a loading state on the button
-            const submitButton = contactForm.querySelector('button[type="submit"]');
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        if (!isValid) {
+            showFormStatus('Please fill in all fields.', 'error');
+            return;
+        }
+        
+        // Show loading state
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitButton.innerHTML;
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitButton.disabled = true;
+        
+        try {
+            // Submit to Formspree
+            const formData = new FormData(contactForm);
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                showFormStatus('Thank you! Your message has been sent successfully.', 'success');
+                contactForm.reset();
+            } else {
+                const data = await response.json();
+                if (data.errors) {
+                    showFormStatus('There was an error sending your message. Please try again.', 'error');
+                } else {
+                    showFormStatus('Thank you! Your message has been sent successfully.', 'success');
+                    contactForm.reset();
+                }
+            }
+        } catch (error) {
+            showFormStatus('There was an error sending your message. Please try again.', 'error');
+        } finally {
+            // Restore button state
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
         }
     });
+    
+    // Function to show form status messages
+    function showFormStatus(message, type) {
+        if (formStatus) {
+            formStatus.innerHTML = message;
+            formStatus.className = `form-status ${type}`;
+            formStatus.style.display = 'block';
+            
+            // Hide success message after 5 seconds
+            if (type === 'success') {
+                setTimeout(() => {
+                    formStatus.style.display = 'none';
+                }, 5000);
+            }
+        }
+    }
 }
 
-// Add CSS for form validation
+// Add CSS for form validation and status messages
 document.head.insertAdjacentHTML('beforeend', `
     <style>
         input.error, textarea.error {
             border-color: #ff3860 !important;
+            box-shadow: 0 0 5px rgba(255, 56, 96, 0.3) !important;
         }
         
-        #form-status {
+        .form-status {
             margin: 15px 0;
+            padding: 12px 15px;
+            border-radius: 5px;
             font-size: 0.9rem;
             font-weight: 500;
+            display: none;
+        }
+        
+        .form-status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .form-status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .contact-form button:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
         }
     </style>
 `);
