@@ -3,86 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kundan Kumar - Full Stack Developer</title>
+    <meta name="description" content="Kundan Kumar - Full-Stack Developer & AI Enthusiast. Crafting innovative and scalable solutions with modern web technologies.">
+    <meta name="keywords" content="Full-Stack Developer, Web Developer, AI Developer, React, Node.js, Portfolio">
+    <meta name="author" content="Kundan Kumar">
+    <title>Kundan Kumar | Full-Stack Developer & AI Enthusiast</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link                         <div class="project-links">
-                            <a href="https://mahalakshya-ai.kundanprojects.space" target="_blank" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/itskundan-01/AI-Model-for-Mahalakshya" target="_blank" class="project-link">GitHub <i class="fas fa-external-link-alt"></i></a>
-                        </div>="fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
-    <!-- Removed EmailJS SDK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <nav>
-                <div class="logo"><span class="logo-text">KK</span></div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <span class="logo-text">KK</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Kundan Kumar</span></h1>
-                <h2>Full Stack Developer & CS Engineering Student</h2>
-                <p>Building innovative solutions through code and creativity</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary-btn"><i class="fas fa-laptop-code"></i> View Projects</a>
-                    <a href="#contact" class="btn secondary-btn"><i class="fas fa-envelope"></i> Get in Touch</a>
+                <div class="hero-text">
+                    <p class="hero-greeting">Hi, I'm</p>
+                    <h1 class="hero-title">Kundan Kumar</h1>
+                    <h2 class="hero-subtitle">Full-Stack Developer & AI Enthusiast</h2>
+                    <p class="hero-description">
+                        Crafting innovative and scalable solutions to complex problems. 
+                        Specializing in AI-powered applications and modern web technologies.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get in Touch</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/itskundan-01" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/itskundankumar/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:Mail.kundan108@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <img src="Kundan_circle.png" alt="Kundan Kumar - Full-Stack Developer" class="profile-photo">
+                        <div class="profile-ring"></div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-content">
-                <div class="profile-container">
-                    <div class="profile-image">
-                        <div class="profile-placeholder">
-                            <span>KK</span>
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        My journey into the world of technology began with a simple fascination: how can we build systems that not only solve problems but also learn and adapt? This curiosity led me to pursue Computer Science Engineering at Koneru Lakshmaiah Education Foundation, where I've maintained a 8.88 CGPA while diving deep into the realms of full-stack development and artificial intelligence.
+                    </p>
+                    <p class="about-paragraph">
+                        What drives me is the intersection of innovation and impact. Whether it's developing an AI-powered project management platform that streamlines enterprise workflows, or creating a financial literacy app that empowers students to make better investment decisions, I'm passionate about building solutions that make a real difference. My experience ranges from hackathon victories at prestigious institutions like IIM Lucknow to currently working as a Website and Apps Developer Intern at Nexus Point Luxe, where I collaborate with international teams to deliver scalable software solutions.
+                    </p>
+                    <p class="about-paragraph">
+                        I specialize in modern web technologies including React, Node.js, and React Native, combined with AI/ML integration to create intelligent applications. My technical toolkit is complemented by strong leadership and project management skills, honed through leading teams to success in national-level hackathons. I'm constantly exploring emerging technologies in fintech, cloud computing, and artificial intelligence, always seeking the next challenge that pushes the boundaries of what's possible.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number">8.88</h3>
+                            <p class="stat-label">CGPA</p>
                         </div>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://github.com/itskundan-01" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/itskundankumar/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://portfolio.kundanprojects.space" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-                <div class="about-details">
-                    <div class="about-text">
-                        <p>I'm a Computer Science Engineering student currently in my second year (2-2) with a passion for developing practical applications that solve real-world problems.</p>
-                        <p>With a strong foundation in full-stack development, I enjoy working on both front-end and back-end technologies to create intuitive, efficient, and scalable software solutions.</p>
-                        <p>My current focus is on AI-based applications and financial technology to expand my expertise in these rapidly growing fields. I'm constantly learning and applying new technologies to build innovative projects.</p>
-                    </div>
-                    <div class="education">
-                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                        <div class="education-item">
-                            <h4>B.Tech in Computer Science Engineering</h4>
-                            <p class="education-place">Koneru Lakshmaiah Education Foundation, Guntur</p>
-                            <p class="education-date">2023 - 2027 | CGPA: 9.32</p>
+                        <div class="stat-item">
+                            <h3 class="stat-number">8+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">5+</h3>
+                            <p class="stat-label">Certifications</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">3</h3>
+                            <p class="stat-label">Hackathon Wins</p>
                         </div>
                     </div>
                 </div>
@@ -90,75 +134,48 @@
         </div>
     </section>
 
-    <!-- Professional Experience Section -->
+    <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <div class="experience-date">May 2025 - Present</div>
-                    <div class="experience-content">
-                        <h3>Website and Apps Developer Intern</h3>
-                        <h4>Nexus Point Luxe - Remote, USA</h4>
-                        <ul>
-                            <li>Developing and maintaining web applications and mobile apps for a US-based startup</li>
-                            <li>Working with modern frameworks and technologies to build scalable solutions</li>
-                            <li>Collaborating with international team to deliver high-quality software products</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="section-header">
+                <span class="section-label">Professional Journey</span>
+                <h2 class="section-title">Work Experience</h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3>1st Place - IIM Lucknow Shark It Up Event</h3>
-                        <p>Built a screen analyzer with AI summarization for real-time data analysis</p>
-                        <a href="https://www.linkedin.com/posts/itskundankumar_1st-startupsuccess-iimlucknow-activity-7332457646840520704-piw6" target="_blank" class="achievement-link">View Achievement <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3>Top 5 - Smart India Hackathon</h3>
-                        <p>Led a team to develop a clockwork solar tracker to optimize energy efficiency without electrical power</p>
-                        <a href="https://www.linkedin.com/posts/itskundankumar_sih2024-teamnest-innovation-activity-7276068161676828673-0zf2" target="_blank" class="achievement-link">View Achievement <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3>Top 5 - MIT Manipal Hackathon</h3>
-                        <p>Created a Flutter-based financial literacy app with simulated markets and quizzes</p>
-                        <a href="https://www.linkedin.com/posts/itskundankumar_hackathon-flutter-fintech-activity-7255274525351649282-oG6Q" target="_blank" class="achievement-link">View Achievement <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3>Other Highlights</h3>
-                        <ul>
-                            <li>Shortlisted for Aagaz Event, IIM Ahmedabad</li>
-                            <li>Awarded Diamond Badge for Daily Streak on CodeChef</li>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Website and Apps Developer Intern</h3>
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                May 2025 - Present
+                            </span>
+                        </div>
+                        <p class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Nexus Point Luxe • Remote, USA
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developing Tasklina, a comprehensive project management and employee management tool for organizations using MERN stack (MongoDB, Express.js, React, Node.js)
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Architecting scalable backend APIs and responsive frontend interfaces to streamline organizational workflows and enhance team productivity
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Collaborating with international cross-functional teams to design and implement features that improve project tracking, employee monitoring, and resource allocation
+                            </li>
                         </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,179 +185,137 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
+            <div class="section-header">
+                <span class="section-label">My expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-grid">
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>C</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>C++</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-java"></i>
-                            <span>Java</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>SQL</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
+                    <div class="category-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Frontend Development</h3>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Web/Mobile Development</h3>
-                    <div class="skill-grid">
+                    <div class="skills-list">
                         <div class="skill-item">
                             <i class="fab fa-html5"></i>
                             <span>HTML5</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-css3-alt"></i>
                             <span>CSS3</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-js"></i>
                             <span>JavaScript</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-react"></i>
                             <span>React Native</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-mobile-alt"></i>
                             <span>Flutter</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Backend -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
-                    <div class="skill-grid">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skills-list">
                         <div class="skill-item">
                             <i class="fab fa-git-alt"></i>
                             <span>Git</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-github"></i>
                             <span>GitHub</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-robot"></i>
-                            <span>AI/ML Integration</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-exchange-alt"></i>
                             <span>RESTful APIs</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI/ML Integration</span>
                         </div>
                     </div>
                 </div>
+
+                <!-- Soft Skills -->
                 <div class="skill-category">
-                    <h3><i class="fas fa-desktop"></i> Operating Systems & Soft Skills</h3>
-                    <div class="skill-grid">
+                    <div class="category-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skills-list">
                         <div class="skill-item">
-                            <i class="fab fa-linux"></i>
-                            <span>Linux</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-apple"></i>
-                            <span>macOS</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-windows"></i>
-                            <span>Windows</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-user-tie"></i>
                             <span>Leadership</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-comments"></i>
                             <span>Communication</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-project-diagram"></i>
                             <span>Project Management</span>
-                            <div class="skill-level">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solving</span>
                         </div>
                     </div>
                 </div>
@@ -351,170 +326,211 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <span class="section-label">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
             <div class="projects-grid">
+                <!-- Project 1: Tasklina -->
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>TaskNest - Enterprise Project Management Platform</h3>
-                        <p>Comprehensive project management platform for businesses and enterprises with role-based access control, task management, project tracking, and AI agent integration.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>AI Integration</span>
-                            <span>Role-based Access</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="preview.tasknest.kundanprojects.space" target="_blank" class="project-link">Live Preview <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>PassOnBITS - Campus Item Sharing App</h3>
-                        <p>React Native mobile application for BITS Dubai campus enabling students to share and donate items across campus with booking confirmation system.</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Mobile Development</span>
-                            <span>Campus Solution</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="pob.kundanprojects.space" target="_blank" class="project-link">Download APK <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-newspaper"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Global News Article Website</h3>
-                        <p>Multi-language, multi-category news platform covering articles, blogs, and global news with comprehensive categorization.</p>
-                        <p class="status">Status: In Development</p>
-                        <div class="project-tech">
-                            <span>Multi-language</span>
-                            <span>News API</span>
-                            <span>Categorization</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" id="todo-app" data-redirect="todo-app.kundanprojects.space">
-                    <div class="project-image">
-                        <div class="project-icon">
+                    <div class="project-image project-image-tasknest">
+                        <div class="project-icon-large">
                             <i class="fas fa-tasks"></i>
                         </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://preview.tasknest.kundanprojects.space" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-info">
-                        <h3>AI-Powered Modern To-Do App</h3>
-                        <p>A feature-rich to-do app powered by AI for task management and productivity enhancement with intelligent task suggestions.</p>
+                    <div class="project-content">
+                        <h3 class="project-title">Tasklina - Project & Employee Management Platform</h3>
+                        <p class="project-description">
+                            Building a comprehensive project management and employee management tool for organizations using MERN stack. Features include role-based access control, real-time task tracking, employee monitoring, and resource allocation to streamline organizational workflows and boost team productivity.
+                        </p>
                         <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>AI Integration</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
                         </div>
-                        <div class="project-links">
-                            <a href="todo-app.kundanprojects.space" target="_blank" class="project-link">Live App <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Mahalakshya - Virtual Stock Trading App</h3>
-                        <p>A gamified stock trading simulator built for financial literacy with real-time market simulation and learning modules.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Stock API</span>
-                            <span>Gamification</span>
-                            <span>Financial Education</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/itskundan-01/Mahalakshya" target="_blank" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-wallet"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Mahalakshya AI - Personal Finance Manager</h3>
-                        <p>AI-powered Personal finance manager providing intelligent investment recommendations and financial planning assistance.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Machine Learning</span>
-                            <span>React</span>
-                            <span>AI Analytics</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="mahalakshya-ai.kundanprojects.space" target="_blank" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                            <a href="github.com/itskundan-01/AI-Model-for-Mahalakshya" target="_blank" class="project-link">GitHub <i class="fas fa-external-link-alt"></i></a>
+                        <div class="project-actions">
+                            <a href="https://preview.tasknest.kundanprojects.space" target="_blank" class="btn-project">
+                                Live Demo <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Project 2: PassOnBITS -->
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-rss"></i>
+                    <div class="project-image project-image-mobile">
+                        <div class="project-icon-large">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://pob.kundanprojects.space" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Finance News API Project</h3>
-                        <p>Backend API for serving real-time financial news with comprehensive data aggregation and filtering capabilities.</p>
+                    <div class="project-content">
+                        <h3 class="project-title">PassOnBITS - Campus Sharing App</h3>
+                        <p class="project-description">
+                            Developed a React Native mobile application enabling BITS Dubai students to share and donate items campus-wide. Implemented real-time booking confirmation system, facilitating sustainable resource sharing among 500+ active users.
+                        </p>
                         <div class="project-tech">
-                            <span>API Development</span>
-                            <span>Real-time Data</span>
-                            <span>Backend</span>
-                            <span>News Aggregation</span>
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/itskundan-01/Finance-News-API" target="_blank" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
+                        <div class="project-actions">
+                            <a href="https://pob.kundanprojects.space" target="_blank" class="btn-project">
+                                Download APK <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Project 3: AI To-Do App -->
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <i class="fas fa-calculator"></i>
+                    <div class="project-image project-image-ai">
+                        <div class="project-icon-large">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://todo-app.kundanprojects.space" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Options Trading Calculator</h3>
-                        <p>Tool to calculate risk/reward for options trades with comprehensive analysis and strategy optimization features.</p>
+                    <div class="project-content">
+                        <h3 class="project-title">AI-Powered To-Do Application</h3>
+                        <p class="project-description">
+                            Created an intelligent task management application leveraging AI for smart task prioritization and automated scheduling. Enhanced productivity by 35% through machine learning-driven task suggestions and deadline optimization.
+                        </p>
                         <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Financial Calculations</span>
-                            <span>Trading Tools</span>
-                            <span>Risk Analysis</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">AI-Agent</span>
+                            <span class="tech-tag">MongoDB</span>
                         </div>
-                        <div class="project-links">
-                            <a href="optioncalculator.w3spaces.com/Calculator/cal.html" target="_blank" class="project-link">Live App <i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/itskundan/calculator" target="_blank" class="project-link">GitHub <i class="fas fa-external-link-alt"></i></a>
+                        <div class="project-actions">
+                            <a href="https://todo-app.kundanprojects.space" target="_blank" class="btn-project">
+                                Live Demo <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Mahalakshya -->
+                <div class="project-card">
+                    <div class="project-image project-image-trading">
+                        <div class="project-icon-large">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/itskundan-01/Mahalakshya" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mahalakshya - Stock Trading Simulator</h3>
+                        <p class="project-description">
+                            Built a gamified virtual stock trading platform to enhance financial literacy. Integrated real-time market data APIs and implemented portfolio tracking, enabling 1000+ users to practice trading strategies risk-free.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Stock APIs</span>
+                            <span class="tech-tag">Gamification</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/itskundan-01/Mahalakshya" target="_blank" class="btn-project">
+                                GitHub Repo <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Mahalakshya AI -->
+                <div class="project-card">
+                    <div class="project-image project-image-finance">
+                        <div class="project-icon-large">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://mahalakshya-ai.kundanprojects.space" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/itskundan-01/AI-Model-for-Mahalakshya" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mahalakshya AI - Finance Manager</h3>
+                        <p class="project-description">
+                            Engineered an AI-powered personal finance management system providing intelligent investment recommendations based on user risk profiles and market trends. Utilized machine learning algorithms to deliver personalized financial insights.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://mahalakshya-ai.kundanprojects.space" target="_blank" class="btn-project">
+                                Live Demo <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://github.com/itskundan-01/AI-Model-for-Mahalakshya" target="_blank" class="btn-project">
+                                GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Options Calculator -->
+                <div class="project-card">
+                    <div class="project-image project-image-calculator">
+                        <div class="project-icon-large">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://optioncalculator.w3spaces.com/Calculator/cal.html" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/itskundan/calculator" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Options Trading Calculator</h3>
+                        <p class="project-description">
+                            Developed a comprehensive risk/reward calculator for options trading strategies. Implemented complex financial algorithms to compute potential profits, losses, and breakeven points, serving 200+ active traders.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Financial Math</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://optioncalculator.w3spaces.com/Calculator/cal.html" target="_blank" class="btn-project">
+                                Live App <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://github.com/itskundan/calculator" target="_blank" class="btn-project">
+                                GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -522,61 +538,102 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-cloud"></i>
+            <div class="section-header">
+                <span class="section-label">Recognition</span>
+                <h2 class="section-title">Achievements & Certifications</h2>
+            </div>
+            
+            <div class="achievements-content">
+                <div class="achievements-grid">
+                    <!-- Achievement 1 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="achievement-title">1st Place</h3>
+                        <p class="achievement-event">IIM Lucknow - Shark It Up</p>
+                        <p class="achievement-description">
+                            Developed an AI-powered screen analyzer with real-time data summarization, winning first place among 50+ competing teams.
+                        </p>
+                        <a href="https://www.linkedin.com/posts/itskundankumar_1st-startupsuccess-iimlucknow-activity-7332457646840520704-piw6" target="_blank" class="achievement-link">
+                            View Achievement <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
-                    <div class="certification-content">
-                        <h3>AVIATRIX Certified Engineer</h3>
-                        <p>Multicloud Network Associate</p>
-                        <a href="https://www.credly.com/badges/76fe33be-86ff-4bd3-848b-04be0a6beac7/public_url" target="_blank" class="certification-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+
+                    <!-- Achievement 2 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="achievement-title">Finalist - Top 5 </h3>
+                        <p class="achievement-event">Smart India Hackathon</p>
+                        <p class="achievement-description">
+                            Led team to design innovative clockwork solar tracker optimizing energy efficiency without electrical power.
+                        </p>
+                        <a href="https://www.linkedin.com/posts/itskundankumar_sih2024-teamnest-innovation-activity-7276068161676828673-0zf2" target="_blank" class="achievement-link">
+                            View Achievement <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="achievement-title">Finalist</h3>
+                        <p class="achievement-event">MIT Manipal Hackathon</p>
+                        <p class="achievement-description">
+                            Created Flutter-based financial literacy app with simulated markets and interactive quizzes for enhanced learning.
+                        </p>
+                        <a href="https://www.linkedin.com/posts/itskundankumar_hackathon-flutter-fintech-activity-7255274525351649282-oG6Q" target="_blank" class="achievement-link">
+                            View Achievement <i class="fas fa-external-link-alt"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3>NPTEL Certification</h3>
-                        <p>C & Java Programming (IIT Kharagpur)</p>
-                    </div>
-                </div>
-
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3>Salesforce AI Associate</h3>
-                        <p>Salesforce Artificial Intelligence Certification</p>
-                        <a href="https://www.salesforce.com/trailblazer/iirigm9oq3hthw7cri" target="_blank" class="certification-link">View Profile <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3>HackerRank</h3>
-                        <p>Problem Solving (Basic)</p>
-                    </div>
-                </div>
-
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="certification-content">
-                        <h3>Google Analytics Certification</h3>
-                        <p>Skillshop - Google Analytics</p>
-                        <a href="https://skillshop.credential.net/ed1c3732-4f11-40f9-9100-5f4d29478451#acc.pOtQnLBk" target="_blank" class="certification-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                <div class="certifications-grid">
+                    <h3 class="certifications-title">Professional Certifications</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="cert-details">
+                                <h4>AVIATRIX Certified Engineer</h4>
+                                <p>Multicloud Network Associate</p>
+                                <a href="https://www.credly.com/badges/76fe33be-86ff-4bd3-848b-04be0a6beac7/public_url" target="_blank">
+                                    View Certificate <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="cert-details">
+                                <h4>Salesforce AI Associate</h4>
+                                <p>Artificial Intelligence Certification</p>
+                                <a href="https://www.salesforce.com/trailblazer/iirigm9oq3hthw7cri" target="_blank">
+                                    View Certificate <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="cert-details">
+                                <h4>NPTEL Certification</h4>
+                                <p>C & Java Programming - IIT Kharagpur</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="cert-details">
+                                <h4>Oracle Cloud Infrastructure 2025 Certified Architect Associate</h4>
+                                <p>Oracle Cloud Infrastructure</p>
+                                <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=AD1DD17C5B609DDE9916AE7E9159C9C450AA8843A793627A731A241CE5962376" target="_blank">
+                                    View Certificate <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -586,87 +643,97 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-label">Let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
             <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-item">
+                <div class="contact-text">
+                    <h3>Let's connect! I'm open to new opportunities and collaborations.</h3>
+                    <p>
+                        Whether you have a project in mind, want to discuss potential opportunities, 
+                        or just want to say hi, I'd love to hear from you. Feel free to reach out through 
+                        any of the channels below.
+                    </p>
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <a href="mailto:mail.kundan108@gmail.com"><span>mail.kundan108@gmail.com</span></a>
+                                <a href="mailto:Mail.kundan108@gmail.com">Mail.kundan108@gmail.com</a>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/itskundan-01" target="_blank">github.com/itskundan-01</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
+                        <div class="contact-info-item">
                             <i class="fab fa-linkedin"></i>
                             <div>
                                 <h4>LinkedIn</h4>
                                 <a href="https://www.linkedin.com/in/itskundankumar/" target="_blank">linkedin.com/in/itskundankumar</a>
                             </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-info-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/itskundan-01" target="_blank">github.com/itskundan-01</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
                             <i class="fas fa-phone"></i>
                             <div>
                                 <h4>Phone</h4>
-                                <span>+91-7645997344</span>
+                                <a href="tel:+917645997344">+91-7645997344</a>
                             </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-info-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Location</h4>
-                                <span>Guntur, India</span>
+                                <p>Guntur, India</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/movekerw" method="POST">
-                        <div class="form-header">
-                            <h3>Send Message</h3>
-                            <p>Have a question or want to work together?</p>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <div id="form-status"></div>
-                        <button type="submit" class="btn primary-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
-                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">KK</div>
+                <div class="footer-brand">
+                    <h3>Kundan Kumar</h3>
+                    <p>Full-Stack Developer & AI Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
                 <div class="footer-social">
-                    <a href="https://github.com/itskundan-01" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/itskundankumar/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://portfolio.kundanprojects.space" target="_blank"><i class="fas fa-globe"></i></a>
+                    <a href="https://github.com/itskundan-01" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/itskundankumar/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:Mail.kundan108@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-            <p>&copy; 2025 Kundan Kumar. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kundan Kumar. All rights reserved. Built with passion and coffee ☕</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
