@@ -333,33 +333,12 @@ ul {
                 0 0 0 20px rgba(99, 102, 241, 0.08);
 }
 
-.profile-ring {
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    border: 2px solid var(--primary-color);
-    z-index: 1;
-    animation: ringPulse 3s ease-in-out infinite;
-}
-
 @keyframes profileFloat {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(-15px);
-    }
-}
-
-@keyframes ringPulse {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 0.5;
-    }
-    50% {
-        transform: scale(1.1);
-        opacity: 0.8;
     }
 }
 
@@ -1256,11 +1235,6 @@ section {
         height: 280px;
     }
     
-    .profile-ring {
-        width: 320px;
-        height: 320px;
-    }
-    
     .section-title {
         font-size: 2rem;
     }
@@ -1322,11 +1296,6 @@ section {
     .profile-photo {
         width: 220px;
         height: 220px;
-    }
-    
-    .profile-ring {
-        width: 260px;
-        height: 260px;
     }
     
     .about-stats {
