@@ -277,6 +277,18 @@ ul {
     transform: translateY(-2px);
 }
 
+.btn-outline {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 2px solid var(--border-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
 .hero-social {
     display: flex;
     gap: 1rem;
